@@ -1,33 +1,3 @@
-  Skip to content
-    Search or jump to…
-    Pull requests
-    Issues
-    Codespaces
-    Marketplace
-    Explore
-    
-    @AndersMeinicke
-    AndersMeinicke
-    /
-    CA2-DUCKIT
-    Public
-    Code
-    Issues
-    Pull requests
-    Actions
-    Projects
-    Wiki
-    Security
-    Insights
-    Settings
-    CA2-DUCKIT/.github/workflows/mavenworkflow.yml
-    @rasm445f
-    rasm445f first commit
-    Latest commit 9724a9c 7 days ago
-    History
-    1 contributor
-    57 lines (57 sloc)  3.24 KB
-
   name: Github actions with maven build and deploy
   on:
     push:
@@ -85,4 +55,3 @@
           # Some problem with Tomcat prevents deployment: Sometimes when tomcat fails to unregister the JDBC driver a thread is created called: [mysql-cj-abandoned-connection-cleanup]. If this happens Tomcat cannot undeploy the application and the following will not work.
           # Solution: restart the tomcat container.
           run: mvn -Dremote.user=${{ secrets.REMOTE_USER }} -Dremote.password=${{ secrets.REMOTE_PW }} tomcat7:deploy
-#    CA2-DUCKIT/mavenworkflow.yml at main · AndersMeinicke/CA2-DUCKIT
