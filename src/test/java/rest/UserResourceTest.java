@@ -82,8 +82,8 @@ public class UserResourceTest {
     @BeforeEach
     public void setUp() {
         EntityManager em = emf.createEntityManager();
-        u1 = new User("Henrik","henrik123");
-        u2 = new User("Betty","betty123");
+        u1 = new User("Henrik", "henrik123");
+        u2 = new User("Betty", "betty123");
 
 
         try {
